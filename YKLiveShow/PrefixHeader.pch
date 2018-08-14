@@ -1,0 +1,31 @@
+//
+//  PrefixHeader.pch
+//  YKLiveShow
+//
+//  Created by markye on 2018/6/6.
+//  Copyright © 2018年 markye. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "HttpTool.h"
+#import "MJExtension.h"
+#import "MJRefresh.h"
+#import "APIConfig.h"
+#import "Live.h"
+#import "YYKit.h"
+#import "UIImageView+SDWebImage.h"
+#import "LFLiveKit.h"
+
+#define latitudeKey @"latitude"
+#define longitudeKey @"longitude"
+
+#define LocationUpdatedNotification @"LocationUpdatedNotification"
+
+#define KIsiPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#endif /* PrefixHeader_pch */
